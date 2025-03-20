@@ -65,7 +65,7 @@ Create a `.env` file in the root directory and add your MongoDB URI. Example:
 MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/?retryWrites=true&w=majority
 ```
 
-*Note: You already have an example `.env` file included.*
+*Note: example is given in `.env` file included.*
 
 ### 5. Add HTML Template
 
@@ -83,8 +83,8 @@ Create a `templates` folder and add an `index.html` file. Example basic content:
     <p>Current time: {{ time }}</p>
 
     <form action="/submit" method="post">
-        <input type="text" name="name" placeholder="Enter your name" required />
-        <input type="email" name="email" placeholder="Enter your email" required />
+        <input type="text" name="Name" placeholder="Enter your name" required />
+        <input type="password" name="Password" placeholder="Enter your password" required />
         <button type="submit">Submit</button>
     </form>
 </body>
@@ -117,8 +117,8 @@ By default, the app runs in debug mode at `http://127.0.0.1:5000/`.
 
 ```json
 {
-    "name": "John Doe",
-    "email": "john@example.com"
+    "Name": "Sunil Sonar",
+    "Password": "1234"
 }
 ```
 
